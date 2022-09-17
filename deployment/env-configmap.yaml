@@ -3,12 +3,12 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  POSTGRES_USERNAME: postgres
-  POSTGRES_PASSWORD: udacity-cloud-p3
-  POSTGRES_HOST: udacity-cloud-p3.czj2hsl92hic.us-east-1.rds.amazonaws.com
-  POSTGRES_DB: postgres
-  AWS_BUCKET: udacity-p3-refactor-monolith
+  POSTGRES_USERNAME:  postgres
+  POSTGRES_PASSWORD:  udacity-cloud-p3
+  POSTGRES_HOST:  p3-refactor-monolith.cm85wgpzirkq.us-east-2.rds.amazonaws.com
+  POSTGRES_DB:  postgres
+  AWS_BUCKET: p3-refactor-monolith
   AWS_REGION: us-east-1
-  AWS_PROFILE: udacity
+  AWS_PROFILE:  udacity
   JWT_SECRET: udacity-p3-refactor-monolith
-  URL: http://localhost:8100
+  URL:  http://localhost:8100

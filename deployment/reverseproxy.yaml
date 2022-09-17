@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: docker.io/omotayoishola/reverseproxy
+        image: docker.io/omotayoishola/udagram-reverseproxy:v1
         ports:
         - containerPort: 80
         resources:

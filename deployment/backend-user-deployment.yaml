@@ -17,6 +17,9 @@ spec:
         image: docker.io/omotayoishola/udagram-api-user:v1
         ports:
         - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: env-config
         resources:
           limits:
             cpu: 500m
