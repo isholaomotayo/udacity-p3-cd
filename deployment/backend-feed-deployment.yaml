@@ -16,7 +16,7 @@ spec:
       - name: backend-feed
         image: docker.io/omotayoishola/udagram-api-feed:v1
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         envFrom:
           - configMapRef:
               name: env-config
@@ -31,12 +31,12 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    service: backend-feed
-  name: backend-feed
+    run: backend-feed
+  name: feed
 spec:
   ports:
   - name: "8080"
-    port: 8080
+    port: 80
     targetPort: 8080
   selector:
-    service: backend-feed
+    run: backend-feed
