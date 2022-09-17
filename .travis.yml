@@ -22,7 +22,7 @@ script:
   - docker tag udagram-api-user omotayoishola/udagram-api-user:v1
 
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend omotayoishola/udagram-frontend:v1
+  - docker tag udagram-frontend omotayoishola/udagram-frontend:v2
 
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   - docker tag udagram-reverseproxy omotayoishola/udagram-reverseproxy:v1
